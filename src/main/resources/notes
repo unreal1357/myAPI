@@ -1,0 +1,22 @@
+What this API will be able to do
+
+Social Media Applications
+
+User -> Posts
+1 to many
+
+-Retrieve all users -- GET /Users
+-Create a User -- POST /Users
+-Retrieve one user -- GET /Users/Jon
+-delete a user -- DELETE /Users/Jon
+
+-Retrieve all posts for a User -- GET /Users/{id}/Posts
+-Create a posts for a user -- POST /Users/{id}/Posts
+-Retrieve details of a post -- GET /Users/{id}/Posts/{post_id}
+
+spring boot looks at all classes and jars that are available in the class path and then trys to auto configure them
+spring boot also converts beans to json and json to beans automatically from the auto configuration
+error messaging also created by auto configure
+
+dispatcher servlet handles all of the requests (url goes to dispatcher servlet)
+dispatcher servlet knows all the different mappings created in project
